@@ -1,9 +1,9 @@
 import React from "react";
-import "./Profile.css";
+import styles from "./Profile.module.css";
 
 const Profile = () => {
   return (
-    <div className="content">
+    <div className={styles.content}>
       <div>
         <img src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80" />
       </div>
@@ -14,9 +14,9 @@ const Profile = () => {
       <div>
         My posts
         <div>New post</div>
-        <div className="posts">
-          <div className="item">post1</div>
-          <div className="item">post2</div>
+        <div className={styles.post}>
+          <div className={styles.item}>post1</div>
+          <div className={styles.item}>post2</div>
         </div>
       </div>
     </div>
